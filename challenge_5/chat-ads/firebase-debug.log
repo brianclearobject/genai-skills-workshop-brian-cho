@@ -1,0 +1,19 @@
+[debug] [2025-04-29T21:32:56.878Z] ----------------------------------------------------------------------
+[debug] [2025-04-29T21:32:56.880Z] Command:       /Users/briancho/Library/pnpm/global/5/.pnpm/node@20.6.0/node_modules/node/bin/node /Users/briancho/Library/pnpm/global/5/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-04-29T21:32:56.880Z] CLI Version:   13.0.2
+[debug] [2025-04-29T21:32:56.881Z] Platform:      darwin
+[debug] [2025-04-29T21:32:56.881Z] Node Version:  v20.6.0
+[debug] [2025-04-29T21:32:56.881Z] Time:          Tue Apr 29 2025 17:32:56 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-04-29T21:32:56.881Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-29T21:32:56.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-29T21:32:56.923Z] > authorizing via signed-in user (student-02-0e7cb12d2f26@qwiklabs.net)
+[debug] [2025-04-29T21:32:56.923Z] [iam] checking project qwiklabs-gcp-02-780f38a9daf1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-29T21:32:56.924Z] > refreshing access token with scopes: []
+[debug] [2025-04-29T21:32:56.925Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-29T21:32:56.925Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-29T21:32:57.193Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-29T21:32:57.194Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-29T21:32:57.208Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/qwiklabs-gcp-02-780f38a9daf1:testIamPermissions [none]
+[debug] [2025-04-29T21:32:57.208Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/qwiklabs-gcp-02-780f38a9daf1:testIamPermissions x-goog-quota-user=projects/qwiklabs-gcp-02-780f38a9daf1
+[debug] [2025-04-29T21:32:57.208Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/qwiklabs-gcp-02-780f38a9daf1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
