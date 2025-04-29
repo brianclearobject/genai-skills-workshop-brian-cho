@@ -1,0 +1,92 @@
+{
+  "playbook": {
+    "playbook": {
+      "displayName": "Default Generative Playbook",
+      "goal": "To answer any questions to users about Aurora Bay, Alaska based on the FAQ provided in Datastore.",
+      "steps": [ {
+        "text": "Only give information from the data store."
+      }, {
+        "text": "If necessary, seek clarifying details."
+      } ],
+      "tools": [ "63a20692-6bb2-4a2f-803a-b9d75d3d6403" ],
+      "etag": "680ff942",
+      "playbookId": "00000000-0000-0000-0000-000000000000",
+      "tokenCount": 41,
+      "ragSettings": {
+        "enableRag": true,
+        "summaryAnswerOverrideType": "NON_BLOCKING_ANSWER"
+      },
+      "playbookType": "WORKFLOW",
+      "codeBlock": {
+      
+      },
+      "speechAdaptationSettings": {
+      
+      }
+    },
+    "tools": [ {
+      "id": "63a20692-6bb2-4a2f-803a-b9d75d3d6403",
+      "displayName": "Aurora-Bay-FAQs",
+      "description": "FAQ based document on Aurora Bay",
+      "etag": "680ff134",
+      "dataStoreTool": {
+        "dataStoreConnections": [ {
+          "dataStoreType": "STRUCTURED",
+          "dataStore": "projects/732525375974/locations/us/collections/default_collection/dataStores/aurora-bay-faqs-csv_1745873546897",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1745873549,
+            "nanos": 739632000
+          },
+          "displayName": "aurora-bay-faqs-csv",
+          "dialogflowAddTime": {
+            "seconds": 1745874003,
+            "nanos": 685000000
+          }
+        }, {
+          "dataStoreType": "UNSTRUCTURED",
+          "dataStore": "projects/732525375974/locations/us/collections/default_collection/dataStores/aurora-bay-faqs_1745873138413",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1745873144,
+            "nanos": 786083000
+          },
+          "displayName": "aurora-bay-faqs",
+          "dialogflowAddTime": {
+            "seconds": 1745875171,
+            "nanos": 326000000
+          }
+        } ],
+        "models": {
+          "summarizationModel": {
+          
+          },
+          "rewriterModel": {
+          
+          }
+        },
+        "fallbackPrompt": {
+        
+        },
+        "groundingSettings": {
+          "groundingConfidence": "VERY_HIGH",
+          "disabled": true
+        },
+        "payloadSettings": {
+        
+        },
+        "voiceModeSettings": {
+        
+        }
+      }
+    } ]
+  }
+}
